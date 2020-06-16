@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RcptsTable from './Table'
 import data from './data/cooperRcpts2019.json'
+import CandidateHeader from './CandidateHeader'
 
 class App extends Component {
     render() {
@@ -8,7 +9,7 @@ class App extends Component {
 
         return (
             <div className="container">
-                <h1>Roy Cooper</h1>
+                <CandidateHeader />
                 <RcptsTable cooperData={cooperRcpts2019} />
             </div>
         )

@@ -3,6 +3,7 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
+import './Table.css';
 
 const { SearchBar } = Search;
 
@@ -47,11 +48,13 @@ const columns = [
     }
 ];
 
+
 class RcptsTable extends Component {
     render() {
         const { cooperData } = this.props
 
         return (
+
             <ToolkitProvider keyField="Name" data={cooperData} columns={columns} search>
                 {
                     props => (
